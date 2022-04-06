@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CubeScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] float cubeSpeed = 0.2f;
     void Start()
     {
         
@@ -13,6 +13,6 @@ public class CubeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.up * 0.2f * Time.deltaTime;
+        transform.position += Vector3.up * cubeSpeed * Time.deltaTime;
     }
 }
